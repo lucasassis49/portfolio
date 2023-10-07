@@ -1,3 +1,4 @@
+import { CopyButton } from "@/components/common/CopyButton";
 import Head from "next/head"
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 export default function Contato(){
@@ -11,6 +12,7 @@ export default function Contato(){
                     <span className="font-bold">E-mail para contato</span>
                     <div className="flex gap-1 md:gap-3 items-center">
                         <a href="mailto:lucasassisdev@gmail.com" className="text-sm md:text-lg ">lucasassisdev@gmail.com</a>
+                        <CopyButton textToCopy="lucasassisdev@gmail.com"/>
                     </div>
                 </li>
                 <li className="md:text-xl">
