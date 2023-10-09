@@ -46,7 +46,7 @@ export default function Home() {
       info:"Site e-commerce desenvolvido em (Wordpress) para a loja OBA que tem o segmento de vendas igual Mercado Livre, Shopee e Shein",
       image:{
         url:oba,
-        alt:'Portifolio LLA DEV'
+        alt:'Oba mercado'
       }
     },
     
