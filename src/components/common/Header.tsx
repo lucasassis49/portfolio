@@ -37,8 +37,8 @@ export default function Header(){
           </button>
           <nav className="hidden md:flex items-center gap-8 t">
           <Link href="/" className="">Sobre mim</Link>
-          <Link href="/">Portfolio</Link>
-          <Link href="/">Entre em contato</Link>
+          <Link href="#projetos">Projetos</Link>
+          <Link href="#contato">Entre em contato</Link>
           </nav>
           <Menu isVisible={isMenuOpen} onClose={closeMenu}/>
         </header>

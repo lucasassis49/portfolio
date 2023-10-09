@@ -5,6 +5,9 @@ import Contato from "@/pages/contatos";
 import Projects from "@/components/Home/Projects";
 
 import lladev from "../../public/LLADEV.png"
+import intranet from "../../public/INTRANET.png"
+import vob from "../../public/VOB.png"
+import oba from "../../public/OBA.png"
 
 
 
@@ -20,37 +23,34 @@ export default function Home() {
       },
     },
     {
-      slug:'Portifolio LAA DEV',
-      name:'Portifolio LLA DEV',
+      slug:'https://americavistosonline.com/',
+      name:'Intranet América',
+      info:"Sistema desenvolvido com o objetivo de fornecer informações diárias e auxiliar os colaboradores a melhorar seu desempenho na empresa (REACT/FIREBASE)",
       image:{
-        url:lladev,
-        alt:'Portifolio LLA DEV'
+        url:intranet,
+        alt:'Intranet América'
       }
     },
     {
-      slug:'Portifolio LAA DEV',
-      name:'Portifolio LLA DEV',
+      slug:'https://lojavob.com.br/',
+      name:'VOB',
+      info:"Site e-commerce desenvolvido em (Wordpress) para a loja VOB que trabalha com moda feminina",
       image:{
-        url:lladev,
-        alt:'Portifolio LLA DEV'
+        url:vob,
+        alt:'Loja E-commerce VOB',
       }
     },
     {
-      slug:'Portifolio LAA DEV',
-      name:'Portifolio LLA DEV',
+      slug:'https://obamercado.com.br/',
+      name:'OBA MERCADO',
+      info:"Site e-commerce desenvolvido em (Wordpress) para a loja OBA que tem o segmento de vendas igual Mercado Livre, Shopee e Shein",
       image:{
-        url:lladev,
+        url:oba,
         alt:'Portifolio LLA DEV'
       }
     },
-    {
-      slug:'Portifolio LAA DEV',
-      name:'Portifolio LLA DEV',
-      image:{
-        url:lladev,
-        alt:'Portifolio LLA DEV'
-      }
-    }
+    
+    
   ]
 
   return (

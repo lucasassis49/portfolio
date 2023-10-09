@@ -28,6 +28,7 @@ const config: Config = {
       boxShadow:{
         white: '0 1px 3px 0px rgba(255, 255, 255, 0.9), 0 1px 2px 0px rgba(255, 255, 255, 0.09)',
         weak: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
+        white01: '0 2px 4px 1px rgba(255, 255, 255, 0.9), 0 1px 2px 5px rgba(255, 255, 255, 0.09)',
       },
       animation: {
         fade: 'fade 1s ease-in-out',

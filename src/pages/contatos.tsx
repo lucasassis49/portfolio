@@ -5,8 +5,8 @@ export default function Contato(){
     return(
         <>
         <Head><title>Lucas Assis Dev</title></Head>
-        <div className="mt-12 md:mt-24 space-y-8 md:space-y-16 px-6 md:px-32">
-            <h1 className="text-5xl md:text-7xl font-bold text-center">Contatos</h1>
+        <div id="contato" className="mt-12 md:mt-24 space-y-8 md:space-y-16 px-6 md:px-32">
+            <h1 className="text-5xl md:text-7xl font-bold text-center">Contato</h1>
             <ul className="table mx-auto space-y-6 mad:space-y-8">
                 <li className="md:text-xl">
                     <span className="font-bold">E-mail para contato</span>
