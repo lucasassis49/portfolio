@@ -17,9 +17,9 @@ const roboto = Roboto({
 
 export default function Projects({ projects }: ProjectsProps) {
   return (
-    <article id="projetos" className="space-y-16 2xl:p-28 text-center bg-black shadow-white01 rounded-2xl p-10">
-      <h2 className="text-2xl md:text-2xl text-center items-center">Projetos Recentes</h2>
-      <div className="flex flex-wrap justify-center">
+    <article id="projetos" className="space-y-16 2xl:p-0 text-center  rounded-2xl p-10 xl:w-[50rem] md:items-center xl:mb-[10rem]">
+      <h2 className="text-2xl md:text-4xl text-center items-center">Projetos Recentes</h2>
+      <div className="flex justify-center xl:items-center">
         <Carousel
           showThumbs={false}
           infiniteLoop={true}
@@ -28,7 +28,7 @@ export default function Projects({ projects }: ProjectsProps) {
           showStatus={false}
           showIndicators={false}
          
-          className="items-center sm:flex w-72 xl:w-[50rem]"
+          className="items-center sm:flex w-72 xl:w-[40rem]"
         >
           {projects.map(({ slug, name, image, info }, index) => (
             <div key={name + index} className="project-container">

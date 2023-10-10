@@ -17,6 +17,7 @@ export default function Home() {
     {
       slug:'Portifolio LAA DEV',
       name:'Portifolio LLA DEV',
+      info:"Portifolio",
       image:{
         url:lladev,
         alt:'Portifolio LLA DEV'
@@ -60,9 +61,12 @@ export default function Home() {
     <meta name="description" content="Sou um desenvolvedor Front-end apaixonado por criar interfaces e ajudar outros devs!"/>
     <div className="py-12 px-6 md:px-32 space-y-10 md:space-y-28">
         <AboutMe/>
-        <Projects projects={projects}/>
+        
     </div>
-    <section className="bg-black">
+    <section className="flex xl:items-center xl:justify-center xl:pt-[6rem] bg-black">
+    <Projects projects={projects}/>
+    </section>
+    <section className="">
       <Contato/>
     </section>
     </>
