@@ -3,11 +3,15 @@ import AboutMe from "@/components/Home/AboutMe";
 import Header from '@/components/common/Header';
 import Contato from "@/pages/contatos";
 import Projects from "@/components/Home/Projects";
+import Habilidades from "@/pages/Habilidades";
+
 
 import lladev from "../../public/LLADEV.png"
 import intranet from "../../public/INTRANET.png"
 import vob from "../../public/VOB.png"
 import oba from "../../public/OBA.png"
+
+import { DiGhostSmall } from "react-icons/di";
 
 
 
@@ -63,9 +67,14 @@ export default function Home() {
         <AboutMe/>
         
     </div>
+
     <section className="flex xl:items-center xl:justify-center xl:pt-[6rem] bg-black">
     <Projects projects={projects}/>
     </section>
+    <section className="">
+      <Habilidades/>
+    </section>
+
     <section className="">
       <Contato/>
     </section>

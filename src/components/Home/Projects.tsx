@@ -5,9 +5,18 @@ import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Roboto } from "next/font/google";
+import { Saira } from "next/font/google";
+
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+
 interface ProjectsProps {
   projects: Project[];
 }
+
+const saira = Saira({
+  subsets:['latin'],
+  weight:'500',
+});
 
 const roboto = Roboto({
     subsets:['latin'],
@@ -17,8 +26,11 @@ const roboto = Roboto({
 
 export default function Projects({ projects }: ProjectsProps) {
   return (
-    <article id="projetos" className="space-y-16 2xl:p-0 text-center  rounded-2xl p-10 xl:w-[50rem] md:items-center xl:mb-[10rem]">
-      <h2 className="text-2xl md:text-4xl text-center items-center">Projetos Recentes</h2>
+    <article id="projetos" className={`${saira.className} space-y-16 2xl:p-0 text-center rounded-2xl p-10 xl:w-[50rem] md:items-center xl:mb-[10rem]`}>
+      <div className="flex items-center text-center justify-center gap-6">
+        <FaChevronLeft size={50}/><h2 className={`${saira.className}text-2xl md:text-4xl text-center items-center text-white `}>Projetos Recentes</h2><FaChevronRight size={50}/>
+      </div>
+      
       <div className="flex justify-center xl:items-center">
         <Carousel
           showThumbs={false}
@@ -37,7 +49,6 @@ export default function Projects({ projects }: ProjectsProps) {
                   <Image
                     src={image.url}
                     alt={image.alt}
-                  
                     className="object-cover rounded-2xl h-[18.75rem] mb-4 items-center h-30"
                   />
                   <span className="text-2xl">{name}</span>

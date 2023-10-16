@@ -1,9 +1,11 @@
+import './aboutme.css';
 import Link from "next/link";
 import Image from "next/image";
 import lucasassis from "../../../public/lucasassis.jpeg";
 import './aboutme.css';
 import { Roboto } from "next/font/google";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import {FaNode} from "react-icons/fa";
 
 const roboto = Roboto({
     subsets:['latin'],
@@ -28,13 +30,13 @@ export default function AboutMe() {
                 <li className="md:text-xl">
                     <span className="font-bold"></span>
                     <div className="flex gap-1 md:gap-3 items-center">
-                        <a href="https://www.linkedin.com/in/lucas-assis-4602a01aa/" className="text-sm md:text-lg "><AiFillLinkedin size={40}/></a>
+                        <a href="https://www.linkedin.com/in/lucas-assis-4602a01aa/" className="text-sm md:text-lg hover:text-cyan-400"><AiFillLinkedin id='icon-aifill' size={40}/></a>
                     </div>
                 </li>
                 <li className="md:text-xl">
                     <span className="font-bold"></span>
                     <div className="flex gap-1 md:gap-3 items-center">
-                        <a href="https://github.com/lucasassis49" className="text-sm md:text-lg"><AiFillGithub size={40}/></a>
+                        <a href="https://github.com/lucasassis49" className="text-sm md:text-lg  hover:text-cyan-400"><AiFillGithub size={40}/></a>
                     </div>
                 </li>
                 
@@ -62,7 +64,7 @@ export default function AboutMe() {
         />
         <p className="p-4 w-fit text-base leading-tight bg-cyan-500 rounded-xl text-black absolute-bottom-[0.75rem] sm:bottom-3 animate-bounce">
           <span className="text-3xl">3+</span>
-          <br />
+          <br/>
           anos de experiência
         </p>
       </div>
