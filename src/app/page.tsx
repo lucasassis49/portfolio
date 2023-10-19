@@ -75,7 +75,7 @@ export default function Home() {
       <Habilidades/>
     </section>
 
-    <section className="">
+    <section className=" bg-black">
       <Contato/>
     </section>
     </>
